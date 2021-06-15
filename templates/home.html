@@ -13,7 +13,7 @@
     <label for="foto">Foto</label>
     <!--onchange="imagePreview() <input type="file" name="foto" id="foto" accept="image/*" />-->
 
-    <input name="foto" id="foto" type="file" accept="image/*" capture="camera" onchange="readURL(this);"/>
+    <input name="foto" id="foto" type="file" accept="image/*" />
     {{ form.hidden_tag() }}
     <img id="preview" src="" />
     <img id="image" />
