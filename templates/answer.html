@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="bg-light p-5 rounded-lg m-3">
+    <h1 class="display-4">He recibido:</h1>
+    <p class="lead">Aquí va todo el chorizo describiendo de la aplicación.</p>
+    <hr class="my-4">    
+    <p><img src="{{ url_for('static',filename='uploads/')}}{{ foto }}"/></p>
+    <p>{{ resultado }}</p>
+    <a class="btn btn-primary btn-lg" href="/" role="button">Volver</a>
+  </div>
+{% endblock %}
