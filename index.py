@@ -10,10 +10,10 @@ import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Flatten, Dropout, Activation, Conv2D, MaxPooling2D
 
-from werkzeug.utils import secure_filename
+#from werkzeug.utils import secure_filename
 import flask
-import io
-from PIL import Image
+#import io
+#from PIL import Image
 import os
 from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.applications import imagenet_utils
@@ -101,8 +101,8 @@ def form_get():
 
 
         #data =request.files['file']
-        img = Image.open(request.files['foto'])
-        img = np.array(img)
+        ##img = Image.open(request.files['foto'])
+        ##img = np.array(img)
         #img = cv2.resize(img,(224,224))
         #img_array = cv2.cvtColor(np.array(img), cv2.IMREAD_GRAYSCALE)
 
