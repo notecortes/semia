@@ -2,53 +2,6 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<script>
-  document.getElementById("foto").onchange = function () {
-    alert("eoooh")
-    var reader = new FileReader();
-
-    reader.onload = function (e) {
-        // get loaded data and render thumbnail.
-        document.getElementById("image").src = e.target.result;
-    };
-
-    // read the image file as a data URL.
-    reader.readAsDataURL(this.files[0]);
-  };
-
-  function readURL(input) {
-    alert("eoooh3")
-  if (input.files && input.files[0]) {
-    var reader = new FileReader();
-    reader.onload = function (e) {
-      $('#blah')
-        .attr('src', e.target.result)
-        .width(150)
-        .height(200);
-    };
-    reader.readAsDataURL(input.files[0]);
-  }
-}
-
-
-  function imagePreview2() {
-    alert("eoooh2")
-    var reader = new FileReader();
-
-    reader.onload = function (e) {
-        // get loaded data and render thumbnail.
-        document.getElementById("image").src = e.target.result;
-    };
-
-    // read the image file as a data URL.
-    reader.readAsDataURL(this.files[0]);
-  }
-
-  function imagePreview() {
-    ruta = 'file:///' + document.getElementById("foto").value;
-    document.getElementById("preview").src = ruta;
-  }
-</script>
 <div class="bg-light p-5 rounded-lg m-3">
   <h1 class="display-4">Envia tu foto</h1>
   <p class="lead">Haz una foto con la cámara y envíala usando el formulario.</p>
