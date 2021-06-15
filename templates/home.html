@@ -6,18 +6,12 @@
   <h1 class="display-4">Envia tu foto</h1>
   <p class="lead">Haz una foto con la cámara y envíala usando el formulario.</p>
   <hr class="my-4">
-  <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Enviar</a>-->
-  <form method="POST" action="/formulario" enctype="multipart/form-data" >
-    <!-- <label for="nombre">username</label>
-    <input type="text" name="nombre" id="nombre" required> -->
+    <form method="POST" action="/formulario" enctype="multipart/form-data" >
+    <label for="nombre">username</label>
+    <input type="text" name="nombre" id="nombre" >
     <label for="foto">Foto</label>
-    <!--onchange="imagePreview() <input type="file" name="foto" id="foto" accept="image/*" />-->
-
-    <input name="foto" id="foto" type="file" accept="image/*" />
+    <input type="file" name="foto" id="foto" accept="image/*" />
     {{ form.hidden_tag() }}
-    <img id="preview" src="" />
-    <img id="image" />
-    <img id="blah" src="#" alt="your image" />
     <input type="submit" value="enviar" class="btn btn-primary">
   </form>
 </div>
