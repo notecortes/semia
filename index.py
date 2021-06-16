@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 #from flask.wrappers import Request
 ####ML###
 import numpy as np # linear algebra
-import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+#import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import cv2
 #import matplotlib.pyplot as plt
 import tensorflow as tf
@@ -11,7 +11,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Flatten, Dropout, Activation, Conv2D, MaxPooling2D
 
 #from werkzeug.utils import secure_filename
-import flask
+#import flask
 #import io
 #from PIL import Image
 import os
