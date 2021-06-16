@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from forms import Fotos
+##from forms import Fotos
 #from flask.wrappers import Request
 ####ML###
 import numpy as np # linear algebra
@@ -24,8 +24,9 @@ model = None
 #rutas
 @app.route('/') #pagina principal
 def home():
-    form = Fotos()
-    return render_template('home.html', form=form)
+    ##form = Fotos()
+    ##, form=form
+    return render_template('home.html')
 
 #about
 @app.route('/about') #pagina principal
@@ -36,7 +37,7 @@ def about():
 #formulario
 @app.route('/formulario', methods=['POST','GET']) #pagina principal
 def form_get():
-    form = Fotos()
+    ##form = Fotos()
     if request.method == "GET":
         return render_template('home.html')
     elif request.method == "POST":
